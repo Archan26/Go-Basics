@@ -34,7 +34,18 @@ func main() {
 			zipcode: 334455,
 		},
 	}
+
+	jimPointer := &jim
+	jimPointer.updateName("Nidhi")
 	jim.print()
+
+	//We can write this too
+	// jim.updateName("Nidhi")
+	// jim.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstname string) {
+	(*pointerToPerson).firstName = newFirstname
 }
 
 func (p person) print() {
