@@ -16,5 +16,8 @@ func main() {
 	colors := make(map[string]string)
 
 	colors["White"] = "#ffffff"
+
+	//Delete map value
+	delete(colors, "White")
 	fmt.Println(colors)
 }
