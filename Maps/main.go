@@ -18,7 +18,7 @@ func main() {
 	// colors["White"] = "#ffffff"
 
 	//Delete map value
-	// delete(colors, "White")
+	// delete(colors, "white")
 	// fmt.Println(colors)
 
 	printMap(colors)
